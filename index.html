@@ -41,7 +41,7 @@
     <section class="biography" id="biography">
       <h2 class="biography__section-title">Biography</h2>
       <article class="biography__article">
-        <h3 class="biography__name">Katya Mills</h3>
+        <h3 class="biography__article-title">Katya Mills</h3>
         <p class="biography__job">Art Director</p>
         <ul class="biography__list">
           <li class="biography__item">Scenography</li>
@@ -147,6 +147,57 @@
           </div>
         </article>
       </div>
+    </section>
+    
+
+    <section class="strength" id="strength">
+      <h2 class="strength__section-title">Strong points</h2>
+      <div class="strength__gallery">
+        <picture class="strength__picture">
+          <source 
+            media="(min-width: 1024px)" 
+            srcset="./img/strength-table.jpg 1x, ./img/strength-table@2x.jpg 2x">
+          <source 
+            media="(min-width: 768px)" 
+            srcset="./img/tablet/strength-table-tablet.jpg 1x, ./img/tablet/strength-table-tablet@2x.jpg 2x">
+          <img class="strength__image" 
+            src="./img/tablet/strength-table-tablet.jpg" 
+            srcset="./img/tablet/strength-table-tablet@2x.jpg 2x, ./img/mobile/strength-table-mobile@3x.jpg 3x" 
+            alt="Стол с ноутбуком">
+        </picture>
+        <picture class="strength__picture">
+          <source 
+            media="(min-width: 1024px)" 
+            srcset="./img/strength-tv.jpg 1x, ./img/strength-tv@2x.jpg 2x">
+          <source 
+            media="(min-width: 768px)" 
+            srcset="./img/tablet/strength-tv-tablet.jpg 1x, ./img/tablet/strength-tv-tablet@2x.jpg 2x">
+          <img class="strength__image" 
+            src="./img/tablet/strength-tv-tablet.jpg" 
+            srcset="./img/tablet/strength-tv-tablet@2x.jpg 2x, ./img/mobile/strength-tv-mobile@3x.jpg 3x" 
+            alt="Телевизор в гостиной">
+        </picture>
+        <div class="strength__content">
+          <h3 class="strength__content-title">Strength</h3>
+          <ul class="designers__card-list">
+            <li class="strength__item">Interiors</li>
+            <li class="strength__item">Outdoors</li>
+            <li class="strength__item">Portraits</li>
+            <li class="strength__item">Styling</li>
+            <li class="strength__item">Events</li>
+            <li class="strength__item">Architecture</li>
+            <li class="strength__item">Design</li>
+            <li class="strength__item">Celebrations</li>
+            <li class="strength__item">Fashion</li>
+            <li class="strength__item">Nature</li>
+          </ul>
+        </div>
+        <picture class="strength__picture">
+          <img class="strength__kitchen" 
+            src="./img/strength-kitchen.jpg" 
+            srcset="./img/strength-kitchen@2x.jpg 2x" 
+            alt="Барная стойка">
+        </picture>
     </section>
     
   </main>
