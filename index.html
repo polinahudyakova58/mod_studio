@@ -8,14 +8,20 @@
 <body>
   <header class="header">
     <a class="header__logo" href="#">Mod</a>
-    <nav class="header__nav">
-      <ul class="header__menu">
-        <li class="header__item"><a class="header__link" href="#biography">Biography</a></li>
-        <li class="header__item"><a class="header__link" href="#designers">Designers</a></li>
-        <li class="header__item"><a class="header__link" href="#testimonials">Testimonials</a></li>
-        <li class="header__item"><a class="header__link" href="#strength" >Strong points</a></li>
+    <nav class="header__nav nav-menu">
+      <ul class="menu__list">
+        <li class="nav-menu__item"><a class="nav-menu__link" href="#biography">Biography</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="#designers">Designers</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="#testimonials">Testimonials</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="#strength" >Strong points</a></li>
       </ul>
     </nav>
+
+    <button class="header__btn btn btn--icon" type="button">
+      <svg class="btn__icon" width="21" height="13" aria-hidden="true">
+        <use href="./svg/sprite.svg#icon-msg"></use>
+      </svg>
+    </button>
   </header>
   
   <main class="main-content">
@@ -243,32 +249,69 @@
       <a class="footer__tel" href="tel:+79211234567">+7 921 123-45-67</a>
       <a class="footer__email" href="mailto:info@modstudio.com">info@modstudio.com</a>
     </div>
-    <ul class="footer__socials-list">
-      <li class="footer__socials-item">
-        <a class="socials-link" href="#">
-          <svg class="footer__socials-icon" width="21" height="13" aria-hidden="true">
-            <use href="./svg/sprite.svg#icon-vk"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="footer__socials-item">
-        <a class="socials-link" href="#">
-          <svg class="footer__socials-icon" width="30" height="30" aria-hidden="true">
-            <use href="./svg/sprite.svg#icon-pinterest"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="footer__socials-item">
-        <a class="socials-link" href="#">
-          <svg class="footer__socials-icon" width="30" height="30" aria-hidden="true">
-            <use href="./svg/sprite.svg#icon-dribbble"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-    <div class="footer__rights-block">
-      <span class="footer__rights-text">© 2023 Mod Media. All rights reserved</span>
+
+    <div class="footer__socials socials">
+      <ul class="socials__list"></ul>
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <svg class="socials__icon" width="21" height="13" aria-hidden="true">
+              <use href="./svg/sprite.svg#icon-vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <svg class="socials__icon" width="30" height="30" aria-hidden="true">
+              <use href="./svg/sprite.svg#icon-pinterest"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <svg class="socials__icon" width="30" height="30" aria-hidden="true">
+              <use href="./svg/sprite.svg#icon-dribbble"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer__copyright">
+      <span class="footer__copyright-text">© 2023 Mod Media. All rights reserved</span>
     </div>
   </footer>
 </body>
+<form class="form" action="#" method="post"></form>
+  <h2 class="form__title" hidden>Contact form</h2>
+  <p class="form__description">Get in touch</p>
+  <p class="form__slogan">Do you have any questions? Have something to say? Don't be shy, write to us:</p>
+
+  <div class="form__field">
+    <label class="form__label" for="name-input">Name</label>
+    <svg class="form__icon" width="26" height="26" aria-hidden="true">
+      <use href="./svg/sprite.svg#icon-name"></use>
+    </svg>
+    <input type="text" class="form__input" id="name-input" placeholder="3+ Characters"/>
+  </div>
+
+  <div class="form__field">
+    <label class="form__label" for="email-input">E-mail</label>
+    <svg class="form__icon" width="25" height="25" aria-hidden="true">
+      <use href="./svg/sprite.svg#icon-email"></use>
+    </svg>
+    <input type="email" class="form__input" id="email-input" placeholder="name@email.com" required/>
+  </div>
+
+  <div class="form__field">
+    <label class="form__label" for="comment-textarea">Name</label>
+    <svg class="form__icon" width="26" height="26" aria-hidden="true">
+      <use href="./svg/sprite.svg#icon-comment"></use>
+    </svg>
+    <textarea class="form__textarea" id="comment-textarea"  placeholder="Some text..." required></textarea>
+  </div>
+
+  <div class="form__btn-block">
+    <button class="form__btn btn " type="reset">Cancel</button>
+    <button class="form__btn btn btn--accented" type="submit">Send</button>
+  </div>
 </html>
