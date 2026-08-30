@@ -1,0 +1,17 @@
+:root {
+  --font-heading: "Playfair Display", serif;
+  --font-accent: "Bitter", serif;
+  --font-ui: "Bitter", serif;
+
+  --color-light: #ffffff;
+  --color-text: #000000;
+  --color-dark-soft: #0D0D0D;
+  --color-hover: #A07C72;
+  --color-hover-soft: #D7C8C1;
+  --color-active: #E0B59F;
+  --color-disabled: #CCCCCC;
+
+  --color-placeholder: #868686;
+  --color-border: #B3B3B3;
+  --color-muted: #EDEDED;
+}
