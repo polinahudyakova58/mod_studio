@@ -1,7 +1,7 @@
 :root {
   --font-heading: "Playfair Display", serif;
   --font-accent: "Bitter", serif;
-  --font-ui: "Bitter", serif;
+  --font-ui: "Roboto", sans-serif;
 
   --color-light: #ffffff;
   --color-text: #000000;
