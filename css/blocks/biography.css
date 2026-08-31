@@ -50,6 +50,31 @@
   top: 0;
 }
 
+.biography__name,
+.biography__item,
+.biography__quote {
+  color: var(--color-dark-soft);
+}
+
+.biography__quote {
+  position: relative;
+  color: var(--color-dark-soft);
+  font-size: 26px;
+  line-height: 31px;
+  position: relative;
+  padding-top: 24px;
+  max-width: 370px;
+}
+
+.biography__quote::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: var(--color-dark-soft);
+  content: "";
+  width: 20px;
+  height: 6px;
+}
 
 .biography__picture {
   order: 1;
