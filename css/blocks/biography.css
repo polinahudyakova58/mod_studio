@@ -27,6 +27,7 @@
 
 .biography__name {
   max-width: 250px;
+  line-height: 115px;
 }
 
 .biography__list {

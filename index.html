@@ -301,7 +301,22 @@
     <section class="strength" id="strength">
       <h2 class="strength__section-title text text--section">Strong points</h2>
       <div class="strength__gallery">
-        <picture class="strength__picture">
+        <div class="strength__article">
+          <h3 class="strength__article-title text text--display">Strength</h3>
+          <ul class="strength__list">
+            <li class="strength__item text text--accent">Interiors</li>
+            <li class="strength__item text text--accent">Outdoors</li>
+            <li class="strength__item text text--accent">Portraits</li>
+            <li class="strength__item text text--accent">Styling</li>
+            <li class="strength__item text text--accent">Events</li>
+            <li class="strength__item text text--accent">Architecture</li>
+            <li class="strength__item text text--accent">Design</li>
+            <li class="strength__item text text--accent">Celebrations</li>
+            <li class="strength__item text text--accent">Fashion</li>
+            <li class="strength__item text text--accent">Nature</li>
+          </ul>
+        </div>
+        <picture class="strength__picture strength__picture--ahead">
           <source 
             media="(min-width: 1024px)" 
             srcset="./img/strength-table.jpg 1x, ./img/strength-table@2x.jpg 2x"
@@ -319,7 +334,7 @@
             height="450" 
             alt="Desk with a laptop">
         </picture>
-        <picture class="strength__picture">
+        <picture class="strength__picture strength__picture--ahead">
           <source 
             media="(min-width: 1024px)" 
             srcset="./img/strength-tv.jpg 1x, ./img/strength-tv@2x.jpg 2x"
@@ -337,21 +352,6 @@
             height="450" 
             alt="TV in the living room">
         </picture>
-        <div class="strength__content">
-          <h3 class="strength__content-title text text--display">Strength</h3>
-          <ul class="strength__list">
-            <li class="strength__item text text--accent">Interiors</li>
-            <li class="strength__item text text--accent">Outdoors</li>
-            <li class="strength__item text text--accent">Portraits</li>
-            <li class="strength__item text text--accent">Styling</li>
-            <li class="strength__item text text--accent">Events</li>
-            <li class="strength__item text text--accent">Architecture</li>
-            <li class="strength__item text text--accent">Design</li>
-            <li class="strength__item text text--accent">Celebrations</li>
-            <li class="strength__item text text--accent">Fashion</li>
-            <li class="strength__item text text--accent">Nature</li>
-          </ul>
-        </div>
         <picture class="strength__picture">
           <source 
             media="(min-width: 1024px)" 
@@ -410,41 +410,43 @@
   </form>
 
   <footer class="footer">
-    <div class="footer__contacts">
-      <a class="footer__tel text text--inscription" href="tel:+79211234567">+7 921 123-45-67</a>
-      <a class="footer__email text text--inscription" href="mailto:info@modstudio.com">info@modstudio.com</a>
-    </div>
-
-    <div class="footer__socials socials">
-      <ul class="socials__list">
-        <li class="socials__item">
-          <a class="socials__link" href="#" aria-label="vkontakte">
-            <svg class="socials__icon" width="21" height="13" aria-hidden="true">
+    <address class="footer__contacts">
+      <ul  class="footer__contacts-list">
+        <li class="footer__contcats-item">
+          <a class="footer__tel text text--inscription" href="tel:+79211234567">+7 921 123-45-67</a>
+        </li>
+        <li class="footer__contcats-item">
+          <a class="footer__email text text--inscription" href="mailto:info@modstudio.com">info@modstudio.com</a>
+        </li>
+      </ul>
+      <ul class="footer__socials-list">
+        <li class="footer__socials-item">
+          <a class="footer__socials-link" href="#" aria-label="vkontakte">
+            <svg class="footer__socials-icon" width="21" height="13" aria-hidden="true">
               <use href="./svg/sprite.svg#icon-vk"></use>
             </svg>
           </a>
         </li>
-        <li class="socials__item">
-          <a class="socials__link" href="#" aria-label="pinterest">
-            <svg class="socials__icon" width="30" height="30" aria-hidden="true">
+        <li class="footer__socials-item">
+          <a class="footer__socials-link" href="#" aria-label="pinterest">
+            <svg class="footer__socials-icon" width="30" height="30" aria-hidden="true">
               <use href="./svg/sprite.svg#icon-pinterest"></use>
             </svg>
           </a>
         </li>
-        <li class="socials__item">
-          <a class="socials__link" href="#" aria-label="dribbble">
-            <svg class="socials__icon" width="30" height="30" aria-hidden="true">
+        <li class="footer__socials-item">
+          <a class="footer__socials-link" href="#" aria-label="dribbble">
+            <svg class="footer__socials-icon" width="30" height="30" aria-hidden="true">
               <use href="./svg/sprite.svg#icon-dribbble"></use>
             </svg>
           </a>
         </li>
       </ul>
-    </div>
+    </address>
 
-    <ul class="footer__rights">
-      <li class="footer__author text text--ui">A product of <span>Mod</span></li>
-      <li class="footer__copyright text text--inscription">© 2023 Mod Media. All rights reserved</li>
-    </ul>
+    <p class="footer__center text text--ui">A product of <a class="footer__logo" href="#">Mod</a></p>
+
+    <p class="footer__copyright text text--inscription">© 2023 Mod Media. All rights reserved</p>
   </footer>
 </body>
 </html>

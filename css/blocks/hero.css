@@ -21,6 +21,10 @@
   padding: 65px;
 }
 
+.hero__title {
+  line-height: 103px;
+}
+
 .hero__picture {
   height: 100%;
   width: 100%;
