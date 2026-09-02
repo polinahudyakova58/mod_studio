@@ -41,4 +41,60 @@
   position: absolute;
   transform-origin: center;
   transform: rotate(2deg);
+  pointer-events: none;
+}
+
+.form__description {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.form__slogan {
+  max-width: 400px;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form__control {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.form__icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 10px;
+  top: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.form__svg {
+  color: var(--color-placeholder);
+}
+
+.form__input,
+.form__textarea {
+  width: 100%;
+  padding-right: 30px;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  padding: 6px 40px 6px 10px;
+}
+
+.form__input {
+  height: 42px;
+}
+
+.form__textarea {
+  height: 95px;
 }
