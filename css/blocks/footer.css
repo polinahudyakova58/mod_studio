@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 2px;
   min-height: 100px;
 }
 
@@ -20,7 +21,35 @@
 .footer__email {
   color: var(--color-light);
   text-decoration: underline;
-  line-height: 26px;
+  text-decoration-style: solid;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+  display: block;
+  padding: 4px 5px 2px;
+  margin: 0 -5px;
+  border-style: solid;
+  border-width: 1.5px;
+  border-radius: 8px;
+  border-color: transparent;
+}
+
+.footer__tel:hover,
+.footer__email:hover {
+  color: var(--color-hover);
+}
+
+.footer__tel:active,
+.footer__email:active {
+  text-decoration: none;
+  color: var(--color-active);
+}
+
+.footer__tel:focus-visible,
+.footer__email:focus-visible {
+  outline: none;
+  text-decoration: none;
+  color: var(--color-hover);
+  border-color: var(--color-active);
 }
 
 .footer__email {
@@ -33,14 +62,40 @@
   gap: 25px;
 }
 
-.footer__socials-link {
-  color: var(--color-light);
-  display: block;
+.footer__socials-item {
   width: 30px;
   height: 30px;
+}
+
+.footer__socials-link {
+  color: var(--color-light);
   display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  min-height: 100%;
   align-items: center;
   justify-content: center;
+}
+
+.footer__socials-link--little {
+  border-radius: 8px;
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.footer__socials-link:hover {
+  color: var(--color-hover);
+}
+
+.footer__socials-link:active {
+  color: var(--color-active);
+}
+
+.footer__socials-link:focus-visible {
+  color: var(--color-hover);
+  outline: none;
+  border-color: var(--color-active);
 }
 
 .footer__center {
@@ -51,7 +106,30 @@
   color: var(--color-light);
   font-weight: 900;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 28px;
+  display: inline-block;
+  padding: 1.5px 3px;
+  border-style: solid;
+  border-width: 1.5px;
+  border-radius: 10px;
+  border-color: transparent;
+}
+
+.footer__logo:hover {
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-underline-offset: 2.5px;
+  text-decoration-thickness: 1.5px;
+}
+
+.footer__logo:active {
+  color: var(--color-active);
+}
+
+.footer__logo:focus-visible {
+  outline: none;
+  color: var(--color-hover);
+  border-color: var(--color-active);
 }
 
 .footer__copyright {

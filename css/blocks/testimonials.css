@@ -39,7 +39,6 @@
   max-width: 98px;
 }
 
-
 .testimonials__item {
   display: flex;
   width: 58%;
@@ -48,6 +47,33 @@
 .testimonials__item-title,
 .testimonials__item-link {
   writing-mode: sideways-lr;
+}
+
+.testimonials__item-link {
+  display: block;
+  padding: 5px 1.5px;
+  margin: -5px 0;
+  border-style: solid;
+  border-width: 1.5px;
+  border-radius: 8px;
+  border-color: transparent;
+}
+
+.testimonials__item-link:hover {
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-underline-offset: 2.5px;
+  text-decoration-thickness: 1.5px;
+}
+
+.testimonials__item-link:active {
+  color: var(--color-active);
+}
+
+.testimonials__item-link:focus-visible {
+  outline: none;
+  color: var(--color-hover);
+  border-color: var(--color-active);
 }
 
 .testimonials__article {
