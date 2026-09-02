@@ -1,6 +1,7 @@
 .testimonials {
   max-width: 1203px;
   padding: 0 20px;
+  width: 100%;
   margin: 150px auto;
   display: flex;
   align-items: stretch;

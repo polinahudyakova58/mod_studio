@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: calc(100vw - 20px);
+  max-width: 1440px;
   padding: 20px;
   min-height: 168px;
   background-color:var(--color-dark-soft);
@@ -24,7 +24,6 @@
   text-decoration-style: solid;
   text-underline-offset: 2px;
   text-decoration-thickness: 1px;
-  display: block;
   padding: 4px 5px 2px;
   margin: -4px -5px -2px;
 }
@@ -65,10 +64,14 @@
   line-height: 28px;
   display: inline-block;
   padding: 1.5px 3px;
-  margin: -1.5px -3px;
+  margin: -1.5px -3px -1.5px 0;
 }
 
 .footer__logo:hover {
   text-underline-offset: 2.5px;
   text-decoration-thickness: 1.5px;
+}
+
+.footer__copyright {
+  color: var(--color-light);
 }

@@ -14,4 +14,7 @@
   --color-placeholder: #868686;
   --color-border: #B3B3B3;
   --color-muted: #EDEDED;
+
+  --color-opacity: rgba(129, 126, 126, 0.6);
+  --color-shadow: rgba(37, 72, 153, 0.17);
 }

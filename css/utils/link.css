@@ -6,6 +6,7 @@
 .link:hover {
   text-decoration: underline;
   text-decoration-style: solid;
+  color: var(--color-hover);
 }
 
 .link:active {

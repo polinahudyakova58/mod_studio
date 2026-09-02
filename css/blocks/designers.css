@@ -1,5 +1,6 @@
 .designers {
-  max-width: calc(100vw - 20px);
+  width: 100%;
+  max-width: 1440px;
   padding-left: 20px;
   overflow-x: hidden;
 }

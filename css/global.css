@@ -19,6 +19,19 @@ body {
   align-items: center;
 }
 
+.main-content,
+.header,
+.footer {
+  width: 100%;
+  max-width: 100%;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .footer {
   margin-top: auto;
 }
