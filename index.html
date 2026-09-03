@@ -8,16 +8,16 @@
 </head>
 <body>
   <header class="header">
-    <a class="header__logo link link--ring-10" href="#">Mod</a>
+    <a class="header__logo link interactive interactive--ring-10" href="#">Mod</a>
     <nav class="header__nav">
       <ul class="header__list">
-        <li class="header__item"><a class="header__link text text--lead link link--ring-10" href="#biography">Biography</a></li>
-        <li class="header__item"><a class="header__link text text--lead link link--ring-10" href="#designers">Designers</a></li>
-        <li class="header__item"><a class="header__link text text--lead link link--ring-10" href="#testimonials" >Testimonials</a></li>
-        <li class="header__item"><a class="header__link text text--lead link link--ring-10" href="#strength">Strong points</a></li>
+        <li class="header__item"><a class="header__link text text--lead link interactive interactive--ring-10" href="#biography">Biography</a></li>
+        <li class="header__item"><a class="header__link text text--lead link interactive interactive--ring-10" href="#designers">Designers</a></li>
+        <li class="header__item"><a class="header__link text text--lead link interactive interactive--ring-10" href="#testimonials" >Testimonials</a></li>
+        <li class="header__item"><a class="header__link text text--lead link interactive interactive--ring-10" href="#strength">Strong points</a></li>
       </ul>
     </nav>
-    <button class="header__btn btn btn--icon link link--ring-10" type="button" aria-label="Contact">
+    <button class="header__btn btn icon-box icon-box--50 interactive interactive--ring-10" type="button" aria-label="Contact">
       <svg class="btn__icon" width="31" height="30" aria-hidden="true">
         <use href="./svg/sprite.svg#icon-msg"></use>
       </svg>
@@ -285,15 +285,15 @@
       <ul class="testimonials__list">
         <li class="testimonials__item">
           <span class="testimonials__item-title text text--inscription-accent">Website</span>
-          <a class="testimonials__item-link text text--inscription link link--ring-8" href="#">www.whitepapers.com</a>
+          <a class="testimonials__item-link text text--inscription link interactive interactive--ring-8" href="#">www.whitepapers.com</a>
         </li>
         <li class="testimonials__item">
           <span class="testimonials__item-title text text--inscription-accent">Creativity</span>
-          <a class="testimonials__item-link text text--inscription link link--ring-8" href="#">www.whitepapers.com</a>
+          <a class="testimonials__item-link text text--inscription link interactive interactive--ring-8" href="#">www.whitepapers.com</a>
         </li>
         <li class="testimonials__item">
           <span class="testimonials__item-title text text--inscription-accent">Creativity</span>
-          <a class="testimonials__item-link text text--inscription link link--ring-8" href="#">www.whitepapers.com</a>
+          <a class="testimonials__item-link text text--inscription link interactive interactive--ring-8" href="#">www.whitepapers.com</a>
         </li>
       </ul>
     </section>
@@ -392,11 +392,14 @@
     </section>    
   </main>
 
-  <form class="form form--active" action="#" method="post">
+  <form class="form form--activ" action="#" method="post">
     <div class="form__inner">
       <h2 class="form__title" hidden>Contact form</h2>
-      <p class="form__description">Get in touch</p>
-      <p class="form__slogan text text--inscription">Do you have any questions? Have something to say? Don't be shy, write to us:</p>
+      <p class="form__lead">Get in touch</p>
+      <div class="form__prompt">
+        <p class="form__prompt-text text text--inscription">Do you have any questions? Have something to say?</p>
+        <p class="form__prompt-text text text--inscription">Don't be shy, write to us:</p>
+      </div>
     
       <div class="form__field">
         <label class="form__label text text--ui" for="name-input">Name</label>
@@ -445,29 +448,29 @@
     <address class="footer__contacts">
       <ul  class="footer__contacts-list">
         <li class="footer__contacts-item">
-          <a class="footer__tel text text--inscription link link--ring-8" href="tel:+79211234567">+7 921 123-45-67</a>
+          <a class="footer__tel text text--inscription link interactive interactive--ring-8" href="tel:+79211234567">+7 921 123-45-67</a>
         </li>
         <li class="footer__contacts-item">
-          <a class="footer__email text text--inscription link link--ring-8" href="mailto:info@modstudio.com">info@modstudio.com</a>
+          <a class="footer__email text text--inscription link interactive interactive--ring-8" href="mailto:info@modstudio.com">info@modstudio.com</a>
         </li>
       </ul>
       <ul class="footer__socials-list">
         <li class="footer__socials-item">
-          <a class="footer__socials-link link link--ring-8" href="#" aria-label="vkontakte">
+          <a class="footer__socials-link icon-box icon-box--30 interactive interactive--ring-8" href="#" aria-label="vkontakte">
             <svg class="footer__socials-icon" width="20" height="13" aria-hidden="true">
               <use href="./svg/sprite.svg#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li class="footer__socials-item">
-          <a class="footer__socials-link link" href="#" aria-label="pinterest">
+          <a class="footer__socials-link icon-box icon-box--30 interactive" href="#" aria-label="pinterest">
             <svg class="footer__socials-icon" width="30" height="30" aria-hidden="true">
               <use href="./svg/sprite.svg#icon-pinterest"></use>
             </svg>
           </a>
         </li>
         <li class="footer__socials-item">
-          <a class="footer__socials-link link" href="#" aria-label="dribbble">
+          <a class="footer__socials-link icon-box icon-box--30 interactive" href="#" aria-label="dribbble">
             <svg class="footer__socials-icon" width="30" height="30" aria-hidden="true">
               <use href="./svg/sprite.svg#icon-dribbble"></use>
             </svg>
@@ -476,7 +479,7 @@
       </ul>
     </address>
 
-    <p class="footer__center text text--ui">A product of <a class="footer__logo link link--ring-8" href="#">Mod</a></p>
+    <p class="footer__center text text--ui">A product of <a class="footer__logo link interactive interactive--ring-8" href="#">Mod</a></p>
 
     <p class="footer__copyright text text--inscription">© 2023 Mod Media. All rights reserved</p>
   </footer>

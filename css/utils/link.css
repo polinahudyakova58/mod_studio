@@ -1,34 +1,14 @@
-.link {
-  display: block;
-  border: 1.5px solid transparent;
+/*только блочный стиль и управление подчеркиванием*/
+.link {  
+  display: block; 
 }
 
 .link:hover {
   text-decoration: underline;
   text-decoration-style: solid;
-  color: var(--color-hover);
 }
 
-.link:active {
-  color: var(--color-active);
-  text-decoration: none;
-}
-
+.link:active,
 .link:focus-visible {
-  outline: none;
   text-decoration: none;
-  color: var(--color-hover);
-}
-
-.link--ring-10 {
-  border-radius: 10px;
-}
-
-.link--ring-8 {
-  border-radius: 8px;
-}
-
-.link--ring-8:focus-visible,
-.link--ring-10:focus-visible {
-  border-color: var(--color-active);
 }

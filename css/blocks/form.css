@@ -20,7 +20,7 @@
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 26px;
   gap: 24px;
   background-color: var(--color-light);
   box-shadow: 0px 11.62px 124.28px 0px var(--color-shadow);
@@ -44,14 +44,16 @@
   pointer-events: none;
 }
 
-.form__description {
+.form__lead {
   font-weight: 700;
   font-size: 22px;
   line-height: 26px;
 }
 
-.form__slogan {
-  max-width: 400px;
+.form__prompt {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
 
 .form__field {
