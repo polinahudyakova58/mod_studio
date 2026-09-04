@@ -1,8 +1,10 @@
 /* цвета интерактивных элементов и отсутствие outline*/
 .interactive:hover { color: var(--color-hover); }
 .interactive:active { color: var(--color-active); }
-.interactive:focus-visible { 
+.interactive:focus {
   outline: none;
+}
+.interactive:focus-visible { 
   color: var(--color-hover);
 }
 
@@ -26,8 +28,11 @@
   position: relative;
 }
 
-.interactive--ring-inset:focus-visible {
+.interactive--ring-inset:focus {
   outline: none;
+}
+
+.interactive--ring-inset:focus-visible {
   border-radius: 10px;
   color: var(--color-text);
 }
