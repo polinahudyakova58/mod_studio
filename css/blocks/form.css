@@ -160,3 +160,14 @@
     scrollbar-color: var(--color-border) transparent;
   }
 }
+
+.form__btn-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 9px;
+}
+
+.form__btn {
+  height: 54px;
+}
