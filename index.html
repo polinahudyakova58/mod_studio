@@ -3,9 +3,381 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Mod Studio</title>
 </head>
 <body>
+  <header class="header">
+    <a class="header__logo" href="#">Mod</a>
+    <nav class="header__nav nav-menu">
+      <ul class="nav-menu__list">
+        <li class="nav-menu__item"><a class="nav-menu__link" href="#biography">Biography</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="#designers">Designers</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="#testimonials">Testimonials</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="#strength">Strong points</a></li>
+      </ul>
+    </nav>
+
+    <button class="header__btn btn btn--icon" type="button" aria-label="Contact">
+      <svg class="btn__icon" width="31" height="30" aria-hidden="true">
+        <use href="./svg/sprite.svg#icon-msg"></use>
+      </svg>
+    </button>
+  </header>
   
+  <main class="main-content">
+    <section class="hero">
+      <div class="hero__content">
+        <h1 class="hero__title">Mod Studio</h1>
+        <p class="hero__subtitle">Modern Web Studio</p>
+      </div>
+      <picture class="hero__picture">
+        <source 
+          media="(min-width: 1024px)" 
+          srcset="./img/hero-inside.jpg 1x, ./img/hero-inside@2x.jpg 2x"
+          width="1440"
+          height="630">
+        <source 
+          media="(min-width: 768px)" 
+          srcset="./img/tablet/hero-inside-tablet.jpg 1x, ./img/tablet/hero-inside-tablet@2x.jpg 2x"
+          width="768"
+          height="382">
+        <img class="hero__image" 
+          src="./img/mobile/hero-inside-mobile.jpg" 
+          srcset="./img/mobile/hero-inside-mobile@2x.jpg 2x, ./img/mobile/hero-inside-mobile@3x.jpg 3x"
+          width="450"
+          height="382"
+          alt="Indoors interior">
+      </picture>
+    </section>
+
+    <section class="biography" id="biography">
+      <h2 class="biography__section-title">Biography</h2>
+      <article class="biography__article">
+        <h3 class="biography__name">Katya Mills</h3>
+        <p class="biography__job">Art Director</p>
+        <ul class="biography__list">
+          <li class="biography__item">Scenography</li>
+          <li class="biography__item">Styling</li>
+          <li class="biography__item">Creative Photography</li>
+          <li class="biography__item">Design</li>
+        </ul>
+        <blockquote class="biography__quote">“The more I deal with the work as something that is my own, as something that is personal, the more successful it is.”</blockquote>
+      </article>
+      <picture class="biography__picture">
+        <source 
+          media="(min-width: 1024px)" 
+          srcset="./img/biography-katya-mills.jpg 1x, ./img/biography-katya-mills@2x.jpg 2x"
+          width="571"
+          height="840">
+        <source 
+          media="(min-width: 768px)" 
+          srcset="./img/tablet/biography-katya-mills-tablet.jpg 1x, ./img/tablet/biography-katya-mills-tablet@2x.jpg 2x"
+          width="768"
+          height="400">
+        <img class="biography__image" 
+          src="./img/mobile/biography-katya-mills-mobile.jpg" 
+          srcset="./img/mobile/biography-katya-mills-mobile@2x.jpg 2x, ./img/mobile/biography-katya-mills-mobile@3x.jpg 3x" 
+          width="450"
+          height="400"
+          alt="Katya Mills photo">
+      </picture>
+    </section>
+
+    <section class="designers" id="designers">
+      <h2 class="designers__section-title">Designers</h2>
+      <div class="designers__gallery">
+        <article class="designers__card designers__card--hover">
+          <picture class="designers__card-picture">
+            <source 
+              media="(min-width: 1024px)" 
+              srcset="./img/designers-cap.jpg 1x, ./img/designers-cap@2x.jpg 2x"
+              width="336"
+              height="438" >
+            <source 
+              media="(min-width: 768px)" 
+              srcset="./img/tablet/designers-cap-tablet.jpg 1x, ./img/tablet/designers-cap-tablet@2x.jpg 2x"
+              width="310"
+              height="438" >
+            <img class="designers__image" 
+              src="./img/tablet/designers-cap-tablet.jpg" 
+              srcset="./img/tablet/designers-cap-tablet@2x.jpg 2x, ./img/mobile/designers-cap-mobile@3x.jpg 3x"
+              width="310"
+              height="438" 
+              alt="Girl in cap">
+          </picture>
+          <div class="designers__card-content">
+            <h3 class="designers__card-name">Jess Wonder</h3>
+            <ul class="designers__card-list">
+              <li class="designers__card-item">From</li>
+              <li class="designers__card-item">Be more flower</li>
+            </ul>
+            <ul class="designers__card-list">
+              <li class="designers__card-item">Skills</li>
+              <li class="designers__card-item">Design Strategy</li>
+              <li class="designers__card-item">Marketing</li>
+            </ul>
+          </div>
+        </article>
+        <article class="designers__card">
+          <picture class="designers__card-picture">
+            <source 
+              media="(min-width: 1024px)" 
+              srcset="./img/designers-bag.jpg 1x, ./img/designers-bag@2x.jpg 2x"
+              width="336"
+              height="438" >
+            <source 
+              media="(min-width: 768px)" 
+              srcset="./img/tablet/designers-bag-tablet.jpg 1x, ./img/tablet/designers-bag-tablet@2x.jpg 2x"
+              width="310"
+              height="438" >
+            <img class="designers__image" 
+              src="./img/tablet/designers-bag-tablet.jpg" 
+              srcset="./img/tablet/designers-bag-tablet@2x.jpg 2x, ./img/mobile/designers-bag-mobile@3x.jpg 3x"
+              width="310"
+              height="438"  
+              alt="Bag in hands">
+          </picture>
+          <div class="designers__card-content">
+            <h3 class="designers__card-name">Kameron Clein</h3>
+            <ul class="designers__card-list">
+              <li class="designers__card-item">From</li>
+              <li class="designers__card-item">Be more flower</li>
+            </ul>
+            <ul class="designers__card-list">
+              <li class="designers__card-item">Skills</li>
+              <li class="designers__card-item">Design Strategy</li>
+              <li class="designers__card-item">Marketing</li>
+            </ul>
+          </div>
+        </article>
+        <article class="designers__card">
+          <picture class="designers__card-picture">
+            <source 
+              media="(min-width: 1024px)" 
+              srcset="./img/designers-coffee.jpg 1x, ./img/designers-coffee@2x.jpg 2x"
+              width="336"
+              height="438" >
+            <source 
+              media="(min-width: 768px)" 
+              srcset="./img/tablet/designers-coffee-tablet.jpg 1x, ./img/tablet/designers-coffee-tablet@2x.jpg 2x"
+              width="310"
+              height="438" >
+            <img class="designers__image" 
+              src="./img/tablet/designers-coffee-tablet.jpg" 
+              srcset="./img/tablet/designers-coffee-tablet@2x.jpg 2x, ./img/mobile/designers-coffee-mobile@3x.jpg 3x" 
+              width="310"
+              height="438" 
+              alt="Planner and coffee">
+          </picture>
+          <div class="designers__card-content">
+            <h3 class="designers__card-name">Louisse Red</h3>
+            <ul class="designers__card-list">
+              <li class="designers__card-item">From</li>
+              <li class="designers__card-item">Be more flower</li>
+            </ul>
+            <ul class="designers__card-list">
+              <li class="designers__card-item">Skills</li>
+              <li class="designers__card-item">Design Strategy</li>
+              <li class="designers__card-item">Marketing</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+    
+    <section class="testimonials" id="testimonials">
+      <h2 class="testimonials__section-title">Testimonials</h2>
+        <ul class="testimonials__list">
+          <li class="testimonials__item">
+            <span class="testimonials__item-title">Website</span>
+            <a class="testimonials__item-link" href="#">www.whitepapers.com</a>
+          </li>
+          <li class="testimonials__item">
+            <span class="testimonials__item-title">Creativity</span>
+            <a class="testimonials__item-link" href="#">www.whitepapers.com</a>
+          </li>
+          <li class="testimonials__item">
+            <span class="testimonials__item-title">Creativity</span>
+            <a class="testimonials__item-link" href="#">www.whitepapers.com</a>
+          </li>
+        </ul>
+        <picture class="testimonials__picture">
+          <img class="testimonials__image" 
+            src="./img/testimonials-kitchen.jpg" 
+            srcset="./img/testimonials-kitchen@2x.jpg 2x" 
+            width="451"
+            height="760"
+            alt="Bar counter">
+        </picture>
+      <div class="testimonials__content">  
+        <blockquote class="testimonials__quote">“I just really want to do good work and work with some great people, people who challenge me.”</blockquote>
+        <picture class="testimonials__picture">
+          <source 
+            media="(min-width: 1024px)" 
+            srcset="./img/testimonials-bag.jpg 1x, ./img/testimonials-bag@2x.jpg 2x"
+            width="221"
+            height="333">
+          <source 
+            media="(min-width: 768px)" 
+            srcset="./img/tablet/testimonials-bag-tablet.jpg 1x, ./img/tablet/testimonials-bag-tablet@2x.jpg 2x"
+            width="336"
+            height="330">
+          <img class="testimonials__image" 
+            src="./img/mobile/testimonials-bag-mobile.jpg" 
+            srcset="./img/mobile/testimonials-bag-mobile@2x.jpg 2x, ./img/mobile/testimonials-bag-mobile@3x.jpg 3x" 
+            width="414"
+            height="330"
+            alt="Mesh bag">
+        </picture>
+      </div>
+    </section>
+
+    <section class="strength" id="strength">
+      <h2 class="strength__section-title">Strong points</h2>
+      <div class="strength__gallery">
+        <picture class="strength__picture">
+          <source 
+            media="(min-width: 1024px)" 
+            srcset="./img/strength-table.jpg 1x, ./img/strength-table@2x.jpg 2x"
+            width="335"
+            height="554">
+          <source 
+            media="(min-width: 768px)" 
+            srcset="./img/tablet/strength-table-tablet.jpg 1x, ./img/tablet/strength-table-tablet@2x.jpg 2x"
+            width="310"
+            height="450">
+          <img class="strength__image" 
+            src="./img/tablet/strength-table-tablet.jpg" 
+            srcset="./img/tablet/strength-table-tablet@2x.jpg 2x, ./img/mobile/strength-table-mobile@3x.jpg 3x"
+            width="310"
+            height="450" 
+            alt="Desk with a laptop">
+        </picture>
+        <picture class="strength__picture">
+          <source 
+            media="(min-width: 1024px)" 
+            srcset="./img/strength-tv.jpg 1x, ./img/strength-tv@2x.jpg 2x"
+            width="335"
+            height="554">
+          <source 
+            media="(min-width: 768px)" 
+            srcset="./img/tablet/strength-tv-tablet.jpg 1x, ./img/tablet/strength-tv-tablet@2x.jpg 2x"
+            width="310"
+            height="450">
+          <img class="strength__image" 
+            src="./img/tablet/strength-tv-tablet.jpg" 
+            srcset="./img/tablet/strength-tv-tablet@2x.jpg 2x, ./img/mobile/strength-tv-mobile@3x.jpg 3x"
+            width="310"
+            height="450" 
+            alt="TV in the living room">
+        </picture>
+        <div class="strength__content">
+          <h3 class="strength__content-title">Strength</h3>
+          <ul class="strength__list">
+            <li class="strength__item">Interiors</li>
+            <li class="strength__item">Outdoors</li>
+            <li class="strength__item">Portraits</li>
+            <li class="strength__item">Styling</li>
+            <li class="strength__item">Events</li>
+            <li class="strength__item">Architecture</li>
+            <li class="strength__item">Design</li>
+            <li class="strength__item">Celebrations</li>
+            <li class="strength__item">Fashion</li>
+            <li class="strength__item">Nature</li>
+          </ul>
+        </div>
+        <picture class="strength__picture">
+          <source 
+            media="(min-width: 1024px)" 
+            srcset="./img/strength-kitchen.jpg 1x, ./img/strength-kitchen@2x.jpg 2x"
+            width="335"
+            height="554">
+          <source 
+            media="(min-width: 768px)" 
+            srcset="./img/tablet/strength-kitchen-tablet.jpg 1x, ./img/tablet/strength-kitchen-tablet@2x.jpg 2x"
+            width="310"
+            height="450">
+          <img class="strength__image" 
+            src="./img/tablet/strength-kitchen-tablet.jpg" 
+            srcset="./img/tablet/strength-kitchen-tablet@2x.jpg 2x, ./img/mobile/strength-kitchen-mobile@3x.jpg 3x"
+            width="310"
+            height="450" 
+            alt="Bar counter">
+        </picture>
+      </div>
+    </section>    
+  </main>
+
+  <form class="form" action="#" method="post">
+    <h2 class="form__title" hidden>Contact form</h2>
+    <p class="form__description">Get in touch</p>
+    <p class="form__slogan">Do you have any questions? Have something to say? Don't be shy, write to us:</p>
+  
+    <div class="form__field">
+      <label class="form__label" for="name-input">Name</label>
+      <svg class="form__icon" width="26" height="26" aria-hidden="true">
+        <use href="./svg/sprite.svg#icon-name"></use>
+      </svg>
+      <input type="text" class="form__input" id="name-input" name="name" placeholder="3+ Characters" required/>
+    </div>
+  
+    <div class="form__field">
+      <label class="form__label" for="email-input">E-mail</label>
+      <svg class="form__icon" width="25" height="25" aria-hidden="true">
+        <use href="./svg/sprite.svg#icon-email"></use>
+      </svg>
+      <input type="email" class="form__input" id="email-input" name="email" placeholder="name@email.com" required/>
+    </div>
+  
+    <div class="form__field">
+      <label class="form__label" for="comment-textarea">Comment</label>
+      <svg class="form__icon" width="26" height="26" aria-hidden="true">
+        <use href="./svg/sprite.svg#icon-comment"></use>
+      </svg>
+      <textarea class="form__textarea" id="comment-textarea"  placeholder="Some text..." name="comment" required></textarea>
+    </div>
+  
+    <div class="form__btn-block">
+      <button class="form__btn btn" type="reset">Cancel</button>
+      <button class="form__btn btn btn--accented" type="submit">Send</button>
+    </div>
+  </form>
+
+  <footer class="footer">
+    <div class="footer__contacts">
+      <a class="footer__tel" href="tel:+79211234567">+7 921 123-45-67</a>
+      <a class="footer__email" href="mailto:info@modstudio.com">info@modstudio.com</a>
+    </div>
+
+    <div class="footer__socials socials">
+      <ul class="socials__list">
+        <li class="socials__item">
+          <a class="socials__link" href="#" aria-label="vkontakte">
+            <svg class="socials__icon" width="21" height="13" aria-hidden="true">
+              <use href="./svg/sprite.svg#icon-vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#" aria-label="pinterest">
+            <svg class="socials__icon" width="30" height="30" aria-hidden="true">
+              <use href="./svg/sprite.svg#icon-pinterest"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#" aria-label="dribbble">
+            <svg class="socials__icon" width="30" height="30" aria-hidden="true">
+              <use href="./svg/sprite.svg#icon-dribbble"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer__copyright">
+      <span class="footer__copyright-text">© 2023 Mod Media. All rights reserved</span>
+    </div>
+  </footer>
 </body>
 </html>
