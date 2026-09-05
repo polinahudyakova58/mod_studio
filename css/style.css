@@ -1,0 +1,17 @@
+@import url("./variables.css");
+@import url("./fonts.css");
+@import url("./global.css");
+
+@import url("./utils/text.css");
+@import url("./utils/link.css");
+@import url("./utils/interactive.css");
+@import url("./utils/btn.css");
+
+@import url("./blocks/header.css");
+@import url("./blocks/hero.css");
+@import url("./blocks/biography.css");
+@import url("./blocks/designers.css");
+@import url("./blocks/testimonials.css");
+@import url("./blocks/strength.css");
+@import url("./blocks/footer.css");
+@import url("./blocks/form.css");

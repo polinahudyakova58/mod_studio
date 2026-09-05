@@ -1,0 +1,14 @@
+/*только блочный стиль и управление подчеркиванием*/
+.link {  
+  display: block; 
+}
+
+.link:hover {
+  text-decoration: underline;
+  text-decoration-style: solid;
+}
+
+.link:active,
+.link:focus-visible {
+  text-decoration: none;
+}

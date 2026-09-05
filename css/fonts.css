@@ -1,0 +1,123 @@
+/*Roboto weight 300 400 500 700 900 */
+@font-face {
+  font-family: "Roboto";
+  src: 
+    url("../fonts/roboto/Roboto-Light.woff2") format("woff2"),
+    url("../fonts/roboto/Roboto-Light.woff") format("woff"),
+    url("../fonts/roboto/Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: 
+    url("../fonts/roboto/Roboto-Regular.woff2") format("woff2"),
+    url("../fonts/roboto/Roboto-Regular.woff") format("woff"),
+    url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: 
+    url("../fonts/roboto/Roboto-Medium.woff2") format("woff2"),
+    url("../fonts/roboto/Roboto-Medium.woff") format("woff"),
+    url("../fonts/roboto/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: 
+    url("../fonts/roboto/Roboto-Bold.woff2") format("woff2"),
+    url("../fonts/roboto/Roboto-Bold.woff") format("woff"),
+    url("../fonts/roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: 
+    url("../fonts/roboto/Roboto-Black.woff2") format("woff2"),
+    url("../fonts/roboto/Roboto-Black.woff") format("woff"),
+    url("../fonts/roboto/Roboto-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*Bitter weight 300 400 700*/
+@font-face {
+  font-family: "Bitter";
+  src: 
+    url("../fonts/bitter/Bitter-Light.woff2") format("woff2"),
+    url("../fonts/bitter/Bitter-Light.woff") format("woff"),
+    url("../fonts/bitter/Bitter-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bitter";
+  src: 
+    url("../fonts/bitter/Bitter-Regular.woff2") format("woff2"),
+    url("../fonts/bitter/Bitter-Regular.woff") format("woff"),
+    url("../fonts/bitter/Bitter-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bitter";
+  src: 
+    url("../fonts/bitter/Bitter-Bold.woff2") format("woff2"),
+    url("../fonts/bitter/Bitter-Bold.woff") format("woff"),
+    url("../fonts/bitter/Bitter-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*Playfair Display weight 400 500 600*/
+@font-face {
+  font-family: "Playfair Display";
+  src: 
+    url("../fonts/playfair/PlayfairDisplay-Regular.woff2") format("woff2"),
+    url("../fonts/playfair/PlayfairDisplay-Regular.woff") format("woff"),
+    url("../fonts/playfair/PlayfairDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: 
+    url("../fonts/playfair/PlayfairDisplay-Medium.woff2") format("woff2"),
+    url("../fonts/playfair/PlayfairDisplay-Medium.woff") format("woff"),
+    url("../fonts/playfair/PlayfairDisplay-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: 
+    url("../fonts/playfair/PlayfairDisplay-SemiBold.woff2") format("woff2"),
+    url("../fonts/playfair/PlayfairDisplay-SemiBold.woff") format("woff"),
+    url("../fonts/playfair/PlayfairDisplay-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}

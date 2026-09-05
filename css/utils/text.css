@@ -1,0 +1,55 @@
+.text {
+  margin: 0;
+}
+
+ /* огромный Playfair */ 
+.text--display {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 86px;
+}
+
+/* названия секций */
+.text--section {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+/* подзаголовок, меню хедера */ 
+.text--lead { 
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+ /* Bitter, цитаты и список сильных сторон*/
+.text--accent { 
+  font-family: var(--font-accent);
+  font-weight: 400;
+}
+
+/* кнопки, некоторые списки */
+.text--ui { 
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+/* надписи к картинкам */
+.text--inscription {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+/* первые пункты надписей к картинкам */
+.text--inscription-accent {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+}

@@ -1,0 +1,80 @@
+.designers {
+  width: 100%;
+  max-width: 1440px;
+  padding-left: 20px;
+  overflow-x: hidden;
+}
+
+.designers__section-title {
+  margin-left: 119px;
+  margin-bottom: 30px;
+}
+
+.designers__gallery {
+  display: flex;
+  align-items: end;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.designers__card {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.designers__image {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  width: 336px;
+  height: 438px;
+  max-width: unset;
+}
+  
+.designers__card-picture--hover {
+  display: none;
+}
+
+.designers__card--selected .designers__card-picture {
+  display: none;
+}
+
+.designers__card--selected .designers__card-picture--hover {
+  display: block;
+}
+
+.designers__card--selected .designers__image {
+  width: 572px;
+  height: 538px;
+}
+
+.designers__card-content {
+  display: flex;
+  flex-direction: column;
+  width: 336px;
+}
+
+.designers__card-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.designers__card-item:not(:last-child) {
+  display: block;
+  flex-shrink: 0;
+  padding-right: 11px;
+  position: relative;
+}
+
+.designers__card-item:not(:last-child)::after {
+  display: block;
+  content: "/";
+  position: absolute;
+  right: 2px;
+  top: 0;
+}
+
+.designers__card-item:first-child::after {
+  right: 5px;
+}

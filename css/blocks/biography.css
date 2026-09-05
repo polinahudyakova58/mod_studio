@@ -1,0 +1,93 @@
+.biography {
+  width: 100%;
+  max-width: 1205px;
+  padding: 0 20px;
+  margin: 150px auto;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 29px;
+}
+
+.biography__section-title {
+  writing-mode: sideways-lr;
+  align-self: start;
+  order: 2;
+}
+
+.biography__article {
+  order: 3;
+  max-width: 455px;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  justify-content: center;
+  align-items: start;
+}
+
+.biography__name {
+  max-width: 250px;
+  line-height: 115px;
+}
+
+.biography__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.biography__item:not(:last-child) {
+  display: block;
+  flex-shrink: 0;
+  padding-right: 11px;
+  position: relative;
+}
+
+.biography__item:not(:last-child)::after {
+  display: block;
+  content: "/";
+  position: absolute;
+  right: 2px;
+  top: 0;
+}
+
+.biography__name,
+.biography__item,
+.biography__quote {
+  color: var(--color-dark-soft);
+}
+
+.biography__quote {
+  position: relative;
+  color: var(--color-dark-soft);
+  font-size: 26px;
+  line-height: 31px;
+  padding-top: 24px;
+  max-width: 370px;
+}
+
+.biography__quote::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: var(--color-dark-soft);
+  content: "";
+  width: 20px;
+  height: 6px;
+}
+
+.biography__picture {
+  order: 1;
+  height: 100%;
+}
+
+.biography__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 840px;
+  max-width: 571px; 
+  object-fit: cover;
+  object-position: center;
+}

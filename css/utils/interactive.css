@@ -1,0 +1,65 @@
+/* цвета интерактивных элементов и отсутствие outline*/
+.interactive:hover { color: var(--color-hover); }
+.interactive:active { color: var(--color-active); }
+.interactive:focus {
+  outline: none;
+}
+.interactive:focus-visible { 
+  color: var(--color-hover);
+}
+
+/*обводка при фокусе*/
+.interactive--ring-10 {
+  border: 1.5px solid transparent;
+  border-radius: 10px;
+}
+
+.interactive--ring-8 {
+  border: 1.5px solid transparent;
+  border-radius: 8px;
+}
+.interactive--ring-8:focus-visible,
+.interactive--ring-10:focus-visible {
+  border-color: var(--color-active);
+}
+
+/*для картинок*/
+.interactive--ring-inset {
+  position: relative;
+}
+
+.interactive--ring-inset:focus {
+  outline: none;
+}
+
+.interactive--ring-inset:focus-visible {
+  border-radius: 10px;
+  color: var(--color-text);
+}
+
+.interactive--ring-inset:focus-visible img {
+  border-radius: 10px 10px 0 0;
+}
+
+.interactive--ring-inset:not(:first-child):focus-visible img {
+  transform: scaleX(1.01);         
+  z-index: 1;
+}
+
+.interactive--ring-inset:focus-visible > img {
+  border-radius: 10px;
+}
+
+.interactive--ring-inset:focus-visible::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1.5px solid var(--color-active);
+  pointer-events: none;
+  border-radius: 10px;
+}
+
+.interactive--ring-inset:not(:first-child):focus-visible::after {
+  z-index: 2;
+  transform: scaleX(1.01);       
+}
