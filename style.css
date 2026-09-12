@@ -891,6 +891,36 @@ button {
   right: 5px;
 }
 
+@media (max-width: 1023px) {
+  .designers {
+    padding-left: 16px;
+  }
+
+  .designers__section-title {
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+
+  .designers__gallery {
+    gap: 16px;
+  }
+
+  .designers__card {
+    align-items: start;
+    gap: 26px;
+  }
+
+  .designers__image,
+  .designers__card--selected .designers__image {
+    width: 310px;
+    height: 438px;
+  }
+  
+  .designers__card-content {
+    width: 310px;
+  }
+}
+
 /* Block: testimonials */
 .testimonials {
   max-width: 1203px;
