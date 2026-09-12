@@ -188,9 +188,10 @@ body {
 }
 
 img {
-  max-width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
+  object-position: center;
 }
 
 ul {
@@ -215,10 +216,6 @@ button {
 }
 
 /* Utils: text */
-.text {
-  margin: 0;
-}
-
  /* огромный Playfair */ 
 .text--display {
   font-family: var(--font-heading);
@@ -544,23 +541,16 @@ button {
   width: 100%;
 }
 .hero__image {
-  display: block;
-  width: 100%;
-  height: 100%;
   min-height: 630px;
   max-width: none; 
-  object-fit: cover;
-  object-position: center;
 }
 
 /* Block: biography */
 .biography {
-  width: 100%;
   max-width: 1205px;
   padding: 0 20px;
   margin: 150px auto;
   display: flex;
-  align-items: stretch;
   justify-content: center;
   gap: 29px;
 }
@@ -577,9 +567,9 @@ button {
   margin-left: auto;
   display: flex;
   flex-direction: column;
-  gap: 36px;
   justify-content: center;
   align-items: start;
+  gap: 36px;
 }
 
 .biography__name {
@@ -589,8 +579,8 @@ button {
 
 .biography__list {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  max-width: 99%;
 }
 
 .biography__item:not(:last-child) {
@@ -616,7 +606,6 @@ button {
 
 .biography__quote {
   position: relative;
-  color: var(--color-dark-soft);
   font-size: 26px;
   line-height: 31px;
   padding-top: 24px;
@@ -635,22 +624,20 @@ button {
 
 .biography__picture {
   order: 1;
-  height: 100%;
 }
 
 .biography__image {
-  display: block;
-  width: 100%;
-  height: 100%;
-  min-height: 840px;
-  max-width: 571px; 
-  object-fit: cover;
-  object-position: center;
+  max-width: 571px;
+}
+
+@media (max-width: 1200px) {
+  .biography {
+    gap: 20px;
+  }
 }
 
 /* Block: designers */
 .designers {
-  width: 100%;
   max-width: 1440px;
   padding-left: 20px;
   overflow-x: hidden;
@@ -675,9 +662,6 @@ button {
 }
 
 .designers__image {
-  display: block;
-  object-fit: cover;
-  object-position: center;
   width: 336px;
   height: 438px;
   max-width: unset;
@@ -734,10 +718,8 @@ button {
 .testimonials {
   max-width: 1203px;
   padding: 0 20px;
-  width: 100%;
   margin: 150px auto;
   display: flex;
-  align-items: stretch;
   gap: 24px;
 }
 
@@ -750,17 +732,12 @@ button {
 
 .testimonials__desktop-picture {
   order: 2;
-  height: 100%;
 }
 
 .testimonials__desktop-image {
-  display: block;
-  height: 100%;
-  min-height: 840px;
-  width: 451px; 
-  max-width: unset;
-  object-fit: cover;
-  object-position: center;
+  width: 451px;
+  min-height: 680px;
+  max-height: 760px; 
 }
 
 .testimonials__list {
@@ -814,16 +791,18 @@ button {
 }
 
 .testimonials__image {
-  display: block;
   width: 221px;
-  height: 333px;
-  object-fit: cover;
-  object-position: center;
+  max-height: 333px;
+}
+
+@media (max-width: 1200px) {
+  .testimonials {
+    gap: 20px;
+  }
 }
 
 /* Block: strength */
 .strength {
-  width: 100%;
   max-width: 1440px;
   padding-left: 20px;
   margin-bottom: 150px;
@@ -869,9 +848,6 @@ button {
 }
 
 .strength__image {
-  display: block;
-  object-fit: cover;
-  object-position: center;
   width: 335px;
   height: 554px;
   max-width: unset;
