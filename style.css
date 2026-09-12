@@ -218,6 +218,10 @@ button {
 
 /* Utils: text */
  /* огромный Playfair */ 
+.text {
+  font-style: normal;
+}
+
 .text--display {
   font-family: var(--font-heading);
   font-weight: 500;
@@ -231,10 +235,16 @@ button {
   line-height: 28px;
 }
 
-/* подзаголовок, меню хедера */ 
+/* подзаголовок */ 
 .text--lead { 
   font-weight: 500;
-  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+/* меню хедера */ 
+.text--nav { 
+  font-weight: 500;
   font-size: 24px;
   line-height: 28px;
 }
@@ -247,16 +257,14 @@ button {
 
 /* кнопки, некоторые списки */
 .text--ui { 
-    font-weight: 500;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 21px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 /* надписи к картинкам */
 .text--inscription {
   font-weight: 400;
-  font-style: normal;
   font-size: 16px;
   line-height: 19px;
 }
@@ -264,11 +272,46 @@ button {
 /* первые пункты надписей к картинкам */
 .text--inscription-accent {
   font-weight: 700;
-  font-style: normal;
   font-size: 16px;
   line-height: 19px;
 }
 
+@media (max-width: 1023px) {
+  /* на планшете разные размеры будут у всех этихтекстовых элементов*/
+  .text--display {
+    font-weight: 400;
+  }
+
+  .text--section {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .text--lead {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .text--nav {
+    font-size: 0;
+    line-height: 1;
+    text-align: center;
+  }
+
+  .text--nav::first-letter {
+    font-family: var(--font-accent);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  /* на планшете только для цитат такой размер*/
+  .text--accent {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
 /* Utils: link */
 /*только блочный стиль и управление подчеркиванием*/
 .link {  
@@ -485,7 +528,7 @@ button {
 
 .header__list {
   display: flex;
-  flex-direction: row;
+  align-items: center;
   flex-wrap: wrap;
   row-gap: 5px;
   column-gap: 55px;
@@ -504,6 +547,35 @@ button {
 .header__btn {
   width: 50px;
   height: 50px;
+}
+
+@media (max-width: 1023px) {
+  .header {
+    min-height: 82px;
+    padding: 2px 16px;
+  }
+  
+  .header__logo {
+    display: none;
+  }
+
+  .header__nav {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .header__list {
+    column-gap: 0;
+  }
+
+  .header__item {
+    flex: 1;
+  }
+
+  .header__link {
+    width: 90px;
+    height: 100%;
+  }
 }
 
 /* Block: hero */
@@ -543,6 +615,29 @@ button {
   width: 100%;
 }
 
+@media (max-width: 1023px) {
+  .hero,
+  .hero__content {
+    position: static;
+    flex-direction: column;
+  }
+
+  .hero__content {
+    min-height: 303px;
+    gap: 0;
+    padding: 30px;
+  }
+
+  .hero__title {
+    font-size: 70px;
+    line-height: 93px;
+  }
+
+  .hero__image {
+    min-height: 382px;
+  }
+}
+
 /* Block: biography */
 .biography {
   max-width: 1205px;
@@ -578,7 +673,6 @@ button {
 .biography__list {
   display: flex;
   flex-wrap: wrap;
-  max-width: 99%;
 }
 
 .biography__item:not(:last-child) {
@@ -610,6 +704,10 @@ button {
   max-width: 370px;
 }
 
+.biography__quote-br {
+  display: none;
+}
+
 .biography__quote::before {
   position: absolute;
   left: 0;
@@ -626,11 +724,87 @@ button {
 
 .biography__image {
   max-width: 571px;
+  max-height: 840px;
 }
 
 @media (max-width: 1200px) {
   .biography {
     gap: 20px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .biography {
+    margin: 80px 0;
+    padding: 0;
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+
+  .biography__section-title {
+    writing-mode: initial;
+    position: absolute;
+    right: 105px;
+    top: 0;
+  }
+
+  .biography__article {
+    max-width: unset;
+    margin: 0 30px;
+    padding-bottom: 35px;
+    gap: 41px;
+  }
+
+  .biography__name {
+    order: 1;
+    max-width: unset;
+    font-size: 64px;
+    line-height: 85px;
+  }
+
+  .biography__name::before {
+    content: "-";
+  }
+
+  .biography__list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+
+  .biography__item::before {
+    content: "- ";
+  }
+
+  .biography__item:not(:last-child) {
+    padding-right: 0;
+    position: static;
+  }
+
+  .biography__item:not(:last-child)::after {
+    display: none;
+  }
+
+  .biography__quote {
+    position: static;
+    padding-top: 0;
+    min-height: 226px;
+    max-width: unset;
+  }
+
+  .biography__quote-br {
+    display: inline;
+  }
+
+  .biography__quote::before {
+    display: none;
+  }
+
+  .biography__image {
+    max-width: unset;
+    width: 100%;
+    min-height: 401px;
   }
 }
 
