@@ -172,6 +172,7 @@ body {
 
 .main-content,
 .header,
+.hero,
 .footer {
   width: 100%;
   max-width: 100%;
@@ -180,7 +181,7 @@ body {
 .main-content {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
 }
 
 .footer {
@@ -461,8 +462,6 @@ button {
 
 /* Block: header */
 .header {
-  width: 100%;
-  max-width: 1440px;
   min-height: 135px;
   padding: 10px 20px;
   display: flex;
@@ -509,8 +508,6 @@ button {
 
 /* Block: hero */
 .hero {
-  width: 100%;
-  max-width: 1440px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -542,7 +539,8 @@ button {
 }
 .hero__image {
   min-height: 630px;
-  max-width: none; 
+  max-width: unset;
+  width: 100%;
 }
 
 /* Block: biography */
@@ -641,6 +639,9 @@ button {
   max-width: 1440px;
   padding-left: 20px;
   overflow-x: hidden;
+/* ради галереи, чтобы не вылезала за пределы контейнера*/
+  min-width: 0;
+  max-width: 100%;
 }
 
 .designers__section-title {
@@ -653,6 +654,8 @@ button {
   align-items: end;
   gap: 20px;
   overflow-x: auto;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .designers__card {
@@ -807,6 +810,9 @@ button {
   padding-left: 20px;
   margin-bottom: 150px;
   overflow-x: hidden;
+/* ради галереи, чтобы не вылезала за пределы контейнера*/
+  min-width: 0;
+  max-width: 100%;
 }
 
 .strength__section-title {
@@ -818,6 +824,8 @@ button {
   display: flex;
   gap: 21px;
   overflow-x: auto;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .strength__article {
@@ -858,8 +866,6 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  max-width: 1440px;
   padding: 20px;
   min-height: 168px;
   background-color:var(--color-dark-soft);
