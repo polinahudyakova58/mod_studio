@@ -1094,15 +1094,16 @@ button {
   }
 
   .testimonials__item {
-    flex: 1;
+    display: block;
     min-width: max-content;
     padding-right: 16px;
-    flex-direction: column;
     width: unset;
   }
 
   .testimonials__item-title,
   .testimonials__item-link {
+    display: block;
+    width: 100%;
     writing-mode: initial;
   }
 
