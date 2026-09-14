@@ -325,6 +325,19 @@ button {
     font-weight: 300;
   }
 }
+
+@media (max-width: 399px) {
+  .text--nav::first-letter {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  blockquote.text--accent {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
 /* Utils: link */
 /*только блочный стиль и управление подчеркиванием*/
 .link {  
@@ -598,6 +611,22 @@ button {
   }
 }
 
+@media (max-width: 399px) {
+  .header {
+    min-height: 50px;
+  }
+  
+  .header__link {
+    width: 50px;
+    height: 50px;
+  }
+
+  .header__btn {
+    width: 45px;
+    height: 45px;
+  }
+}
+
 /* Block: hero */
 .hero {
   display: flex;
@@ -635,7 +664,6 @@ button {
   width: 100%;
 }
 
-
 @media (max-width: 1200px) {
   .hero__content {
     width: 600px;
@@ -668,6 +696,13 @@ button {
 
   .hero__image {
     min-height: 382px;
+  }
+}
+
+@media (max-width: 399px) {
+  .hero__title {
+    font-size: 48px;
+    line-height: 62px;
   }
 }
 
@@ -870,6 +905,12 @@ button {
   }
 }
 
+@media (max-width: 399px) {
+  .biography__name {
+    font-size: 48px;
+    line-height: 62px;
+  }
+}
 /* Block: designers */
 .designers {
   max-width: 1440px;
@@ -1156,17 +1197,43 @@ button {
 }
 
 @media (max-width: 767px) {
+  .testimonials {
+    max-width: 446px;
+  }
+
   .testimonials__article {
+    padding: 0;
     flex-direction: column;
     width: 100%;
     align-items: center;
   }
 
+  .testimonials__quote {
+    padding: 0;
+    max-width: 340px;
+    width: unset;
+  }
+
+  .testimonials__quote-br {
+    display: none;
+  }
+
+  .testimonials__quote-br--mobile {
+    display: inline;
+  }
+
   .testimonials__image {
     width: 100%;
+    max-width: 414px;
     height: auto;
-    max-height: unset;
-    aspect-ratio: unset;
+  }
+
+  .testimonials__list {
+    justify-content: start;
+  }
+
+  .testimonials__item {
+    min-width: 50%;
   }
 }
 
