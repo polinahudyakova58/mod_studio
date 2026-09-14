@@ -837,6 +837,10 @@ button {
     display: inline;
   }
 
+  .biography__quote-br--mobile {
+    display: none;
+  }
+
   .biography__quote::before {
     display: none;
   }
@@ -845,6 +849,24 @@ button {
     max-width: unset;
     width: 100%;
     min-height: 401px;
+  }
+}
+
+@media (max-width: 767px) {
+  .biography__section-title {
+    right: 16px;
+  }
+
+  .biography__article {
+    margin: 0 16px;
+  }
+
+  .biography__quote-br--mobile {
+    display: inline;
+  }
+
+  .biography__image {
+    height: auto;
   }
 }
 
@@ -1137,6 +1159,14 @@ button {
   .testimonials__article {
     flex-direction: column;
     width: 100%;
+    align-items: center;
+  }
+
+  .testimonials__image {
+    width: 100%;
+    height: auto;
+    max-height: unset;
+    aspect-ratio: unset;
   }
 }
 
@@ -1350,6 +1380,10 @@ button {
     gap: 8px;
   }
 
+  .footer__contacts-list {
+    margin-bottom: 8px;
+  }
+
   .footer__contacts-item {
     max-width: fit-content;
   }
@@ -1363,8 +1397,8 @@ button {
     text-align: right;
   }
 
-  .footer__contacts-list {
-    margin-bottom: 8px;
+  .footer__logo {
+    line-height: 24px;
   }
 }
 
